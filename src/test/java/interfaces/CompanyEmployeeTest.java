@@ -7,11 +7,13 @@ import org.junit.jupiter.api.Test;
 // Implement the necessary methods
 // Give the class a two-arg constructor that takes first and last name
 // Implement the getName method so that the test below passes
-public class CompanyEmployeeTest {
+public class CompanyEmployeeTest
+{
 
-    @Test
-    public void getName() {
-//        CompanyEmployee emp = new CompanyEmployee("Peter", "Gibbons");
-//        assertEquals("Peter Gibbons works for Initech", emp.getName());
-    }
+	@Test
+	public void getName()
+	{
+		//        CompanyEmployee emp = new CompanyEmployee("Peter", "Gibbons");
+		//        assertEquals("Peter Gibbons works for Initech", emp.getName());
+	}
 }

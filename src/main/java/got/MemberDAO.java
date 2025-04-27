@@ -2,46 +2,47 @@ package got;
 
 import java.util.*;
 
-public interface MemberDAO {
-    Optional<Member> findById(Long id);
+public interface MemberDAO
+{
+	Optional<Member> findById(Long id);
 
-    Optional<Member> findByName(String name);
+	Optional<Member> findByName(String name);
 
-    List<Member> findAllByHouse(House house);
+	List<Member> findAllByHouse(House house);
 
-    Collection<Member> getAll();
+	Collection<Member> getAll();
 
-    List<Member> startWithSandSortAlphabetically();
+	List<Member> startWithSandSortAlphabetically();
 
-    List<Member> lannisters_alphabeticallyByName();
+	List<Member> lannisters_alphabeticallyByName();
 
-    List<Member> salaryLessThanAndSortByHouse(double max);
+	List<Member> salaryLessThanAndSortByHouse(double max);
 
-    List<Member> sortByHouseNameThenSortByNameDesc();
+	List<Member> sortByHouseNameThenSortByNameDesc();
 
-    List<Member> houseByDob(House house);
+	List<Member> houseByDob(House house);
 
-    List<Member> kingsByNameDesc();
+	List<Member> kingsByNameDesc();
 
-    double averageSalary();
+	double averageSalary();
 
-    List<String> namesSorted(House house);
+	List<String> namesSorted(House house);
 
-    boolean salariesGreaterThan(double max);
+	boolean salariesGreaterThan(double max);
 
-    boolean anyMembers(House house);
+	boolean anyMembers(House house);
 
-    long howMany(House house);
+	long howMany(House house);
 
-    String houseMemberNames(House house);
+	String houseMemberNames(House house);
 
-    Optional<Member> highestSalary();
+	Optional<Member> highestSalary();
 
-    Map<Boolean, List<Member>> royaltyPartition();
+	Map<Boolean, List<Member>> royaltyPartition();
 
-    Map<House, List<Member>> membersByHouse();
+	Map<House, List<Member>> membersByHouse();
 
-    Map<House, Long> numberOfMembersByHouse();
+	Map<House, Long> numberOfMembersByHouse();
 
-    Map<House, DoubleSummaryStatistics> houseStats();
+	Map<House, DoubleSummaryStatistics> houseStats();
 }
